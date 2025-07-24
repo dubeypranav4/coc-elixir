@@ -75,7 +75,7 @@ Start by building a binary of ElixirLS from its source:
 ```
 git clone https://github.com/elixir-lsp/elixir-ls.git ~/.elixir-ls
 cd ~/.elixir-ls
-mix deps.get && mix compile && mix elixir_ls.release -o release
+MIX_ENV=prod mix deps.get && mix compile && mix elixir_ls.release2 -o release
 ```
 
 Afterwards, create or update your coc-settings file and add this line:
